@@ -21,7 +21,7 @@ gulp.task('serve', function() {
         }
     });
     // Задачи которые нужно отслеживать
-    gulp.watch(['./src/style/**/*.sass', './src/style/*.css'], gulp.series(['sass']));
+    gulp.watch(['./src/style/**/*.sass', './src/style/**/*.css'], gulp.series(['sass']));
     gulp.watch('./public/**/*.html').on('change', browserSync.reload);
 });
 
