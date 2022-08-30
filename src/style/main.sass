@@ -1,48 +1,30 @@
+@import './vars'
+
 body 
-    font-family: 'Plus Jakarta Sans', sans-serif
+    font-family: 'sofia-pro', sans-serif
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
-    letter-spacing: -0.03em
-    line-height: 1.5
 
-section 
-    padding: 120px 0
+a
+    text-decoration: none
 
-.wrapper 
-    width: 1200px
+.wrapper
     margin: 0 auto
+    width: 1200px
+    display: flex
 
-section
-    .heading
-        .title h1 
-            font-weight: 700
-            font-size: 40px
-        h3 
-            font-weight: 600
-            font-size: 20px
-            color: #7C5CFC
-            margin: 0
-        .about
-            display: flex
-            align-items: center
-            margin-top: 12px
-            div 
-                flex-basis: 496px
-                color: #596780
-                margin-left: 163px
-            h1 
-                flex-basis: 245px
-                margin: 0
-    .info 
-        justify-content: space-between
-        display: flex
-        margin-top: 64px
-        .item 
-            flex-basis: 384px
-            h2 
-                font-weight: 600
-                font-size: 24px
-            p 
-                font-weight: 400
-                font-size: 16px
-                color: #596780 
+header .wrapper
+    padding: 8px 60px 8px 60px 
+    justify-content: space-between
+
+header.soft
+    background-color: $head   
+    color: $text-white
+    .links a
+        font-weight: 400
+        font-size: 13px
+        line-height: 24px
+        color: $text-white
+        margin-right: 15px
+    .socials a
+        

@@ -1,59 +1,33 @@
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.03em;
-  line-height: 1.5;
 }
 
-section {
-  padding: 120px 0;
+a {
+  text-decoration: none;
 }
 
 .wrapper {
-  width: 1200px;
   margin: 0 auto;
+  width: 1200px;
+  display: flex;
 }
 
-section .heading .title h1 {
-  font-weight: 700;
-  font-size: 40px;
-}
-section .heading h3 {
-  font-weight: 600;
-  font-size: 20px;
-  color: #7C5CFC;
-  margin: 0;
-}
-section .heading .about {
-  display: flex;
-  align-items: center;
-  margin-top: 12px;
-}
-section .heading .about div {
-  flex-basis: 496px;
-  color: #596780;
-  margin-left: 163px;
-}
-section .heading .about h1 {
-  flex-basis: 245px;
-  margin: 0;
-}
-section .info {
+header .wrapper {
+  padding: 8px 60px 8px 60px;
   justify-content: space-between;
-  display: flex;
-  margin-top: 64px;
 }
-section .info .item {
-  flex-basis: 384px;
+
+header.soft {
+  background-color: #222222;
+  color: #ffffff;
 }
-section .info .item h2 {
-  font-weight: 600;
-  font-size: 24px;
-}
-section .info .item p {
+header.soft .links a {
   font-weight: 400;
-  font-size: 16px;
-  color: #596780;
+  font-size: 13px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */
