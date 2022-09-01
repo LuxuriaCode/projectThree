@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./normalize.css"/> <!-- Сброс стандартных стилей браузера -->
     <link rel="stylesheet" href="https://use.typekit.net/yby2ghi.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./style.css"/>
     
     <title>Главная</title>
@@ -21,7 +22,7 @@
             </div>
             <div class="personalisation">
                 <div class="socials">
-                    <a class="facebook" href="https://uk-ua.facebook.com/"><img class="facebook" src="./img/icons/socials/facebook.svg" alt="facebook"></a><a class="twitter" href="https://twitter.com/?lang=ru"><img class="twitter" src="./img/icons/socials/twitter.svg" alt="twitter"></a><a class="instagram" href="https://www.instagram.com/"><img class="instagram" src="./img/icons/socials/instagram.svg" alt="instagram"></a><a class="pinterest" href=""><img class="pinterest" src="./img/icons/socials/pinteres.svg" alt="pinterest"></a>
+                    <a class="fa-brands fa-facebook-f" href="https://uk-ua.facebook.com/"></a><a class="fa-brands fa-twitter" href="https://twitter.com/?lang=ru"></a><a class="fa-brands fa-instagram" href="https://www.instagram.com/"></a><a class="fa-brands fa-pinterest" href=""></a>
                 </div>
                 <div class="language">
                     <batton>English</batton>
@@ -33,62 +34,65 @@
         </div>
     </header>
     <header class="main">
-        <section>
-            <div class="wrapper">
-                <div class="BestSellingTitle">
-                    <h1>BEST SELLING</h1>
-                    <div class="ClothOptions">
-                        <h3>TOPS</h3><h3>JEANS</h3><h3>BAGS</h3><h3>ACCESSORIES</h3>
-                    </div>
-                </div>
-                <div class="BestSelling">
-                    <div class="Selling">
-                        <div class="offers">
-                            <a class="ClotheImg" href=""><img src="" alt="Lol"></a>
-                            <h3 class="clothTip">Jean</h3>
-                            <h2 class="ClothName">Cropped Faux Leather Jacket</h2>
-                            <p class="Cost">$99</p>
-                        </div>
-                    </div>
-                    <div class="Selling">
-                        <div class="offers">
-                            <a class="ClotheImg" href=""><img src="" alt="Lol"></a>
-                            <h3 class="clothTip">Jean</h3>
-                            <h2 class="ClothName">Calvin Shorts</h2>
-                            <p class="Cost">$29</p>
-                        </div>
-                    </div>
-                    <div class="Selling">
-                        <div class="offers">
-                            <a class="ClotheImg" href=""><img src="" alt="Lol"></a>
-                            <h3 class="clothTip">Jean</h3>
-                            <h2 class="ClothName">Cableknit Shawl</h2>
-                            <p class="Cost">$62</p>
-                        </div>
-                    </div>
-                    <div class="Selling">
-                        <div class="offers">
-                            <a class="ClotheImg" href=""><img src="" alt="Lol"></a>
-                            <h3 class="clothTip">Jean</h3>
-                            <h2 class="ClothName">Kirby T-Shirt</h2>
-                            <p class="Cost">$17</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ShopByCategory">
-                    <a class="clothTip" href=""><img src="" alt="Cum"></a>
-                    <h2>ACCESSORIES</h2>
-                    <a class="clothTip" href=""><img src="" alt="Cum"></a>
-                    <h2>BAGS</h2>
-                    <a class="clothTip" href=""><img src="" alt="Cum"></a>
-                    <h2>SHOES</h2>
-                    <a class="clothTip" href=""><img src="" alt="Cum"></a>
-                    <h2>OUTERWEAR</h2>
-                    <a class="clothTip" href=""><img src="" alt="Cum"></a>
-                    <h2>TOP</h2>
+        
+    </header>
+
+    <section class="best-selling">
+        <div class="best-selling__wrapper wrapper">
+            <div class="best-selling__title">
+                <h1>BEST SELLING</h1>
+                <div class="best-selling__cloth-options">
+                    <a href="">TOPS</a><a href="">JEANS</a><a href="">BAGS</a><a href="">ACCESSORIES</a>
                 </div>
             </div>
-        </section>
-    </header>
+            <div class="best-selling__container">
+                <div class="best-selling__item">
+                    <a class="best-selling__image" href=""><img src="./img/product.png" alt="Lol"></a>
+                    <h3 class="best-selling__tip">Jean</h3>
+                    <h2 class="best-selling__name">Cropped Faux Leather Jacket</h2>
+                    <p class="best-selling__cost">$99</p>
+                </div>
+                <div class="best-selling__item">
+                    <a class="best-selling__image" href=""><img src="./img/product.png" alt="Lol"></a>
+                    <h3 class="best-selling__tip">Jean</h3>
+                    <h2 class="best-selling__name">Cropped Faux Leather Jacket</h2>
+                    <p class="best-selling__cost">$99</p>
+                </div>
+                <div class="best-selling__item">
+                    <a class="best-selling__image" href=""><img src="./img/product.png" alt="Lol"><div class="best-selling__cart">
+                        <span>ADD TO CART</span><span>QUICK VIEW</span>
+                    </div></a>
+                    
+                    <h3 class="best-selling__tip">Jean</h3>
+                    <h2 class="best-selling__name">Cropped Faux Leather Jacket</h2>
+                    <p class="best-selling__cost">$99</p>
+                </div>
+                <div class="best-selling__item">
+                    <a class="best-selling__image" href=""><img src="./img/product.png" alt="Lol"></a>
+                    <h3 class="best-selling__tip">Jean</h3>
+                    <h2 class="best-selling__name">Cropped Faux Leather Jacket</h2>
+                    <p class="best-selling__cost">$99</p>
+                </div>
+            </div>
+            
+    </section>
+
+    <section>
+        <div class="wrapper">
+            <div class="ShopByCategory">
+                <a class="clothTip" href=""><img src="" alt="Cum"></a>
+                <h2>ACCESSORIES</h2>
+                <a class="clothTip" href=""><img src="" alt="Cum"></a>
+                <h2>BAGS</h2>
+                <a class="clothTip" href=""><img src="" alt="Cum"></a>
+                <h2>SHOES</h2>
+                <a class="clothTip" href=""><img src="" alt="Cum"></a>
+                <h2>OUTERWEAR</h2>
+                <a class="clothTip" href=""><img src="" alt="Cum"></a>
+                <h2>TOP</h2>
+            </div>
+        </div>
+        </div>
+    </section>
 </body>
 </html>

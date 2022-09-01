@@ -16,6 +16,8 @@ a {
 
 header .wrapper {
   padding: 8px 60px 8px 60px;
+  margin: 0;
+  width: calc(100% - 120px);
   justify-content: space-between;
 }
 
@@ -29,5 +31,69 @@ header.soft .links a {
   line-height: 24px;
   color: #ffffff;
   margin-right: 15px;
+}
+header.soft .personalisation {
+  display: flex;
+}
+header.soft .personalisation .socials a {
+  color: #ffffff;
+  margin-right: 24px;
+}
+
+.best-selling__wrapper {
+  flex-direction: column;
+}
+.best-selling__title {
+  text-align: center;
+}
+.best-selling__cloth-options a {
+  margin-right: 40px;
+  color: #767676;
+}
+.best-selling__cloth-options a:last-child {
+  margin: 0;
+}
+.best-selling__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.best-selling__item {
+  width: 280px;
+}
+.best-selling__image {
+  position: relative;
+}
+.best-selling__image img {
+  width: 280px;
+}
+.best-selling__tip {
+  color: #B9A16B;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 2px;
+}
+.best-selling__name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+.best-selling__cost {
+  margin-top: 8px;
+  color: #767676;
+}
+.best-selling__cart {
+  padding: 16px 0 10px 0;
+  background-color: #222222;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */

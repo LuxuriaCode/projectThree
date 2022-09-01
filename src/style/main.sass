@@ -14,10 +14,12 @@ a
     display: flex
 
 header .wrapper
-    padding: 8px 60px 8px 60px 
+    padding: 8px 60px 8px 60px
+    margin: 0
+    width: calc(100% - 120px)
     justify-content: space-between
 
-header .soft
+header.soft
     background-color: $head   
     color: $text-white
     .links a
@@ -29,31 +31,52 @@ header .soft
     .personalisation
         display: flex
         .socials a
-            .facebook
-                font-size: 14px
-                line-height: 15px
-                margin-right: 24px
-            .twitter
-                font-size: 14px
-                line-height: 15px
-                margin-right: 24px
-            .intagram
-                font-size: 14px
-                line-height: 15px
-                margin-right: 24px
-            .pinterest
-                font-size: 14px
-                line-height: 15px
-                margin-right: 24px
+            color: $text-white
+            margin-right: 24px
 
-header .main .section .wrapper .BestSellingTitle h1
-    text-align: center
-    font-weight: 700
-    font-size: 35px
-    line-height: 49px
-        .ClothOptions h3
-            display: flex
-            justify-content: space-between
-            font-weight: 500
-            font-size: 16px
-            line-height: 22px
+.best-selling
+    &__wrapper
+        flex-direction: column
+    &__title
+        text-align: center
+    &__cloth-options a
+        margin-right: 40px 
+        color: $second
+        &:last-child
+            margin: 0
+    &__container
+        display: flex
+        justify-content: space-between
+        margin-top: 50px 
+    &__item
+        width: 280px
+    &__image
+        position: relative
+        img
+            width: 280px
+    &__tip
+        color: $third
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 2px 
+    &__name
+        margin-top: 0
+        margin-bottom: 0 
+        font-weight: 400
+        font-size: 16px
+        line-height: 18px
+    &__cost
+        margin-top: 8px
+        color: $second
+    &__cart
+        padding: 16px 0 10px 0
+        background-color: $head
+        color: $text-white
+        display: flex
+        justify-content: space-around
+        position: absolute
+        width: 100%
+        bottom: 5px
+        left: 0
+        
