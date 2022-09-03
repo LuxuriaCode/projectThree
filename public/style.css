@@ -129,17 +129,16 @@ header.soft .personalisation .socials a {
   line-height: 24px;
 }
 
-.new-collection__wrapper {
-  margin: 0;
+.new-collection {
+  margin-top: 72px;
+  background-image: url("./img/productBack.png");
 }
 .new-collection__container {
   text-align: center;
-  margin-top: 72px;
-  padding: 200px 572px 200px 572px;
-  background-image: url("./img/productBack.png");
+  padding: 200px 0;
+  width: 100%;
 }
 .new-collection__container h1 {
-  width: 375px;
   font-weight: 700;
   font-size: 60px;
   line-height: 84px;
