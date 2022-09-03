@@ -33,15 +33,55 @@ header.soft
         .socials a
             color: $text-white
             margin-right: 24px
+        .switcher a
+            position: relative
+            color: $text-white
+            margin-right: 22px
+            &:first-child
+                margin-right: 52px
+            &::after
+                position: absolute
+                right: -22px
+                top: calc(50%  -  4px)
+                content: ''
+                width: 12px
+                height: 12px
+                background-image: url(./img/icons/arrow.svg)
 
 .best-selling
     &__wrapper
         flex-direction: column
     &__title
         text-align: center
-    &__cloth-options a
+    &__cloth-options a    
         margin-right: 40px 
         color: $second
+        position: relative
+        transition-duration: 0.4s
+        &.active
+            color: $head
+            &::before
+                transition-duration: 0.4s
+                content: ''
+                bottom: -7px
+                position: absolute
+                width: 90%
+                height: 2px
+                background-color: $head
+        &:hover
+            color: $head
+            .best-selling__cloth-options a.active
+                color: $second
+            &::before
+                width: 90%
+        &::before
+            transition-duration: 0.4s
+            content: ''
+            bottom: -7px
+            position: absolute
+            width: 0
+            height: 2px
+            background-color: $head
         &:last-child
             margin: 0
     &__container
@@ -51,8 +91,14 @@ header.soft
     &__item
         width: 280px
     &__image
+        width: 280px
+        height: 340px
         position: relative
+        overflow: hidden
+        &:hover .best-selling__cart
+            bottom: 0
         img
+            height: 340px
             width: 280px
     &__tip
         color: $third
@@ -70,15 +116,32 @@ header.soft
         margin-top: 8px
         color: $second
     &__cart
-        padding: 16px 0 10px 0
+        padding: 16px 0
         background-color: $head
         color: $text-white
         display: flex
         justify-content: space-around
         position: absolute
         width: 100%
-        bottom: 5px
+        bottom: -50.4px
         left: 0
+        transition-duration: 0.4s
+    &__like
+        position: absolute
+        color: $head
+        background-color: $text-white
+        top: 20px
+        right: 20px
+        border-radius: 20px
+        padding: 13px 12px 11px 12px
+        &:active
+            background-color: $red
+        &:hover
+            color: $red
+            &:active
+                color: $text-white
+            
+
 
 .shop-category
     &__wrapper

@@ -39,6 +39,23 @@ header.soft .personalisation .socials a {
   color: #ffffff;
   margin-right: 24px;
 }
+header.soft .personalisation .switcher a {
+  position: relative;
+  color: #ffffff;
+  margin-right: 22px;
+}
+header.soft .personalisation .switcher a:first-child {
+  margin-right: 52px;
+}
+header.soft .personalisation .switcher a::after {
+  position: absolute;
+  right: -22px;
+  top: calc(50% - 4px);
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(./img/icons/arrow.svg);
+}
 
 .best-selling__wrapper {
   flex-direction: column;
@@ -49,6 +66,38 @@ header.soft .personalisation .socials a {
 .best-selling__cloth-options a {
   margin-right: 40px;
   color: #767676;
+  position: relative;
+  transition-duration: 0.4s;
+}
+.best-selling__cloth-options a.active {
+  color: #222222;
+}
+.best-selling__cloth-options a.active::before {
+  transition-duration: 0.4s;
+  content: "";
+  bottom: -7px;
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: #222222;
+}
+.best-selling__cloth-options a:hover {
+  color: #222222;
+}
+.best-selling__cloth-options a:hover .best-selling__cloth-options a.active {
+  color: #767676;
+}
+.best-selling__cloth-options a:hover::before {
+  width: 90%;
+}
+.best-selling__cloth-options a::before {
+  transition-duration: 0.4s;
+  content: "";
+  bottom: -7px;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #222222;
 }
 .best-selling__cloth-options a:last-child {
   margin: 0;
@@ -62,9 +111,16 @@ header.soft .personalisation .socials a {
   width: 280px;
 }
 .best-selling__image {
+  width: 280px;
+  height: 340px;
   position: relative;
+  overflow: hidden;
+}
+.best-selling__image:hover .best-selling__cart {
+  bottom: 0;
 }
 .best-selling__image img {
+  height: 340px;
   width: 280px;
 }
 .best-selling__tip {
@@ -86,15 +142,34 @@ header.soft .personalisation .socials a {
   color: #767676;
 }
 .best-selling__cart {
-  padding: 16px 0 10px 0;
+  padding: 16px 0;
   background-color: #222222;
   color: #ffffff;
   display: flex;
   justify-content: space-around;
   position: absolute;
   width: 100%;
-  bottom: 5px;
+  bottom: -50.4px;
   left: 0;
+  transition-duration: 0.4s;
+}
+.best-selling__like {
+  position: absolute;
+  color: #222222;
+  background-color: #ffffff;
+  top: 20px;
+  right: 20px;
+  border-radius: 20px;
+  padding: 13px 12px 11px 12px;
+}
+.best-selling__like:active {
+  background-color: #D6001C;
+}
+.best-selling__like:hover {
+  color: #D6001C;
+}
+.best-selling__like:hover:active {
+  color: #ffffff;
 }
 
 .shop-category__wrapper {
