@@ -57,6 +57,39 @@ header.soft .personalisation .switcher a::after {
   background-image: url(./img/icons/arrow.svg);
 }
 
+header.main {
+  color: #222222;
+}
+header.main .links a {
+  position: relative;
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 15px;
+}
+header.main .links a:hover {
+  transition-duration: 0.4s;
+}
+header.main .links a:hover::before {
+  transition-duration: 0.5s;
+  content: "";
+  bottom: -7px;
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: #222222;
+}
+header.main .logo a {
+  left: 904px;
+}
+header.main .icons a {
+  margin-right: 30px;
+}
+header.main .icons a:last-child {
+  margin: 0;
+}
+
 .best-selling__wrapper {
   flex-direction: column;
 }
