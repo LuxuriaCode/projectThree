@@ -1,0 +1,82 @@
+@import './vars'
+
+.best-proposition
+    &__wrapper
+        flex-direction: column
+    &__container
+        margin-top: 60px 
+        display: flex
+        justify-content: space-between
+    &__item
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        height: 380px
+        width: 380px
+        background-image: url("./img/proposition.png")
+    &__special-item
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        height: 380px
+        width: 380px
+        background-color: $third
+    &__image
+        width: 140px
+        color: $head
+    &__special-image
+        width: 220px
+        color: $text-white
+    h3
+        font-weight: 700
+        font-size: 26px
+        line-height: 36px
+        text-align: center
+        margin-bottom: 0
+        margin-top: 0
+    p
+        position: relative
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        text-align: center
+        margin-top: 3px
+        transition-duration: 0.4s
+        &::before
+            transition-duration: 0.4s
+            width: 0
+            content: ''
+            bottom: -7px
+            position: absolute
+            height: 2px
+            background-color: $head
+        &:hover
+            &::before
+                width: 70px
+    h4
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        text-align: center
+        margin-bottom: 8px
+    .best-proposition__special-item p.see-more
+        position: relative
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        text-align: center
+        margin-top: 3px
+        transition-duration: 0.4s
+        &::before
+            transition-duration: 0.4s
+            width: 0
+            content: ''
+            bottom: -7px
+            position: absolute
+            height: 2px
+            background-color: $text-white
+        &:hover
+            &::before
+                width: 70px

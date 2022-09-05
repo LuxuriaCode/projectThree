@@ -5,3 +5,42 @@
     width: 100vw
     background-image: url("./img/first-screen.png")
     margin-top: -70px
+    &__title
+        position: relative
+        top: 200px
+    h3
+        text-align: right
+        height: 24px
+        width: 150px
+        position: relative
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: -10px
+    h1
+        margin-top: 0
+        margin-bottom: 0
+        font-weight: 800
+        font-size: 70px
+        line-height: 80px
+    p
+        font-weight: 400
+        font-size: 16px
+        line-height: 21px
+        margin-bottom: 54px
+    a
+        background-color: $text-white
+        color: $head
+        padding: 18px 48px 13px 78px
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        position: relative
+        &::before
+            width: 40px
+            content: ''
+            bottom: 20px
+            left: 25px
+            position: absolute
+            height: 2px
+            background-color: $head
