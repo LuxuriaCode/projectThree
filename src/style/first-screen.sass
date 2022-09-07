@@ -2,12 +2,15 @@
 
 .first-screen
     height: calc(100vh - 40px)
+    min-height: 700px
     width: 100vw
     background-image: url("./img/first-screen.png")
     margin-top: -70px
-    &__title
-        position: relative
-        top: 200px
+    &__wrapper
+        margin: 0!important
+        justify-content: center
+        align-items: center
+        height: 100%
     h3
         text-align: right
         height: 24px
@@ -31,16 +34,16 @@
     a
         background-color: $text-white
         color: $head
-        padding: 18px 48px 13px 78px
+        padding: 18px 48px 18px 78px
         font-weight: 500
         font-size: 14px
         line-height: 24px
         position: relative
         &::before
-            width: 40px
+            width: 20px
             content: ''
-            bottom: 20px
-            left: 25px
+            top: 28px
+            left: 48px
             position: absolute
             height: 2px
             background-color: $head
