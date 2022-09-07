@@ -1,0 +1,26 @@
+@import './vars'
+    
+.input
+    position: relative
+    input
+        padding: 12px 20px
+        width: 100%
+        box-sizing: border-box
+        outline: none
+        border: 2px solid $background-footer
+        transition-duration: 0.4s
+        &:focus, &:not(:placeholder-shown)
+            border-color: $head
+            ~ label
+                color: $head
+                top: -8px
+                left: 19px
+                padding: 0 4px
+    label
+        transition-duration: 0.4s
+        background-color: $text-white
+        color: $second
+        position: absolute
+        left: 22px
+        top: 14px
+        font-size: 14px
