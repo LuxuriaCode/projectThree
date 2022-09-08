@@ -245,6 +245,65 @@
   width: 100vw;
   background-color: rgba(34, 34, 34, 0.4);
 }
+.cart__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart__view-cart {
+  height: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+  color: #222222;
+  padding: 22px 134px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #E4E4E4;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.cart__checkout {
+  height: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+  color: #ffffff;
+  padding: 22px 134px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #222222;
+}
+.cart__image {
+  background-image: url("./img/bag.png");
+  width: 100px;
+  height: 100px;
+}
+.cart__item {
+  display: flex;
+}
+.cart h1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+}
+.cart__color {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #767676;
+}
+.cart__size {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #767676;
+}
 .first-screen {
   height: calc(100vh - 40px);
   width: 100vw;
