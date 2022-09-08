@@ -304,15 +304,42 @@
   line-height: 24px;
   color: #767676;
 }
+.checkout__wrapper {
+  flex-direction: column;
+}
+.checkout__group {
+  display: flex;
+  width: 100%;
+}
+.checkout__group .input {
+  width: 100%;
+}
+.checkout__group .input:not(:last-child) {
+  margin-right: 30px;
+}
+.checkout__info {
+  width: 380px;
+}
+.checkout__container {
+  display: flex;
+  flex-direction: row;
+}
+.checkout__form {
+  flex-grow: 1;
+  margin-right: 40px;
+}
 .first-screen {
   height: calc(100vh - 40px);
+  min-height: 700px;
   width: 100vw;
   background-image: url("./img/first-screen.png");
   margin-top: -70px;
 }
-.first-screen__title {
-  position: relative;
-  top: 200px;
+.first-screen__wrapper {
+  margin: 0 !important;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .first-screen h3 {
   text-align: right;
@@ -340,17 +367,17 @@
 .first-screen a {
   background-color: #ffffff;
   color: #222222;
-  padding: 18px 48px 13px 78px;
+  padding: 18px 48px 18px 78px;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   position: relative;
 }
 .first-screen a::before {
-  width: 40px;
+  width: 20px;
   content: "";
-  bottom: 20px;
-  left: 25px;
+  top: 28px;
+  left: 48px;
   position: absolute;
   height: 2px;
   background-color: #222222;
@@ -435,6 +462,35 @@ header.main .icons a {
 }
 header.main .icons a:last-child {
   margin: 0;
+}
+.input {
+  position: relative;
+}
+.input input {
+  padding: 12px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid #E4E4E4;
+  transition-duration: 0.4s;
+}
+.input input:focus, .input input:not(:placeholder-shown) {
+  border-color: #222222;
+}
+.input input:focus ~ label, .input input:not(:placeholder-shown) ~ label {
+  color: #222222;
+  top: -8px;
+  left: 19px;
+  padding: 0 4px;
+}
+.input label {
+  transition-duration: 0.4s;
+  background-color: #ffffff;
+  color: #767676;
+  position: absolute;
+  left: 22px;
+  top: 14px;
+  font-size: 14px;
 }
 body {
   font-family: "sofia-pro", sans-serif;
