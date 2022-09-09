@@ -1,0 +1,105 @@
+@import './vars'
+    
+.main
+    background-color: $head
+    color: $text-white
+    padding-bottom: 88px
+    &__wrapper
+        flex-direction: column
+    &__get-email
+        display: flex
+        flex-direction: column
+        text-align: center
+        .input
+            width: 550px
+    &__join
+        margin-left: 20px
+        width: 150px
+        height: 48px
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        color: $text-white
+        text-align: center
+        text-decoration: none
+        display: inline-block
+        border: none
+        background-color: #5C5C5C
+    &__email-address
+        justify-content: center
+        display: flex
+    &__socials a
+        margin-top: 40px
+        color: $text-white
+        &:not(:last-child)
+            margin-right: 36px 
+            color: $text-white
+    &__logo
+        margin-top: 90px
+    &__info
+        display: flex
+        justify-content: space-between
+    &__contact-info
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+    &__address
+        margin-top: 25px
+        color: $background-footer
+    &__email
+        margin-top: 25px
+        color: $background-footer
+    &__number
+        margin-top: 25px
+        color: $background-footer
+
+    &__company
+        margin-top: 60px
+        font-weight: 400
+        font-size: 14px
+        line-height: 40px
+    &__shop
+        margin-top: 60px
+        font-weight: 400
+        font-size: 14px
+        line-height: 40px
+    &__help
+        margin-top: 60px
+        font-weight: 400
+        font-size: 14px
+        line-height: 40px
+    &__opening-time
+        margin-top: 60px
+        font-weight: 400
+        font-size: 14px
+        line-height: 40px
+    a
+        color: $background-footer
+
+.soft
+    background-color: $head
+    border-top: 1px solid $text-white
+    height: 88px
+    display: flex
+    align-items: center
+    &__wrapper
+        justify-content: space-between
+    &__data
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        color: $background-footer
+    &__switcher a
+        position: relative
+        color: $text-white
+        margin-right: 22px
+        &:first-child
+            margin-right: 27px
+        &::after
+            position: absolute
+            right: -22px
+            top: calc(50%  -  4px)
+            content: ''
+            width: 12px
+            height: 12px
+            background-image: url(./img/icons/arrow.svg)
