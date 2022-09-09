@@ -332,6 +332,58 @@
   line-height: 24px;
   color: #767676;
 }
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 29px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox:last-of-type {
+  margin-bottom: 30px;
+}
+.checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 2px solid #E4E4E4;
+}
+.checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox input:checked ~ .checkmark {
+  background-color: #222222;
+  border-color: #222222;
+}
+.checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+.checkbox input:hover input ~ .checkmark {
+  background-color: #ccc;
+}
 .checkout__wrapper {
   flex-direction: column;
 }
@@ -439,8 +491,18 @@
   margin-bottom: 16px;
   margin-top: 13px;
 }
-
-.input:not(:last-child) {
+.checkout textarea {
+  padding: 12px 20px;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid #E4E4E4;
+}
+.checkout .input-radio {
+  margin-top: 16px;
+}
+.checkout .input:not(:last-child) {
   margin-bottom: 30px;
 }
 .first-screen {
@@ -450,10 +512,10 @@
   background-image: url("./img/first-screen.png");
   margin-top: -70px;
 }
-.first-screen__wrapper {
-  margin: 0 !important;
+.first-screen .wrapper {
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   height: 100%;
 }
 .first-screen h3 {
@@ -497,24 +559,33 @@
   height: 2px;
   background-color: #222222;
 }
-.mainfooter {
+.footer {
+  padding-top: 93px;
   background-color: #222222;
   color: #ffffff;
   padding-bottom: 88px;
 }
-.mainfooter__wrapper {
+.footer input {
+  background-color: #353535;
+  color: #ffffff;
+  border-color: #353535 !important;
+}
+.footer__wrapper {
   flex-direction: column;
 }
-.mainfooter__get-email {
+.footer__discount {
+  margin-top: 0;
+}
+.footer__get-email {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.mainfooter__get-email .input {
+.footer__get-email .input {
   margin-top: 24px;
   width: 550px;
 }
-.mainfooter__join {
+.footer__join {
   margin-top: 24px;
   margin-left: 20px;
   width: 150px;
@@ -529,73 +600,73 @@
   border: none;
   background-color: #5C5C5C;
 }
-.mainfooter__email-address {
+.footer__email-address {
   justify-content: center;
   display: flex;
 }
-.mainfooter__socials a {
+.footer__socials a {
   margin-top: 40px;
   color: #ffffff;
 }
-.mainfooter__socials a:not(:last-child) {
+.footer__socials a:not(:last-child) {
   margin-right: 36px;
   color: #ffffff;
 }
-.mainfooter__logo {
+.footer__logo {
   margin-top: 90px;
 }
-.mainfooter__info {
+.footer__info {
   display: flex;
   justify-content: space-between;
 }
-.mainfooter__contact-info {
+.footer__contact-info {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
-.mainfooter__address {
+.footer__address {
   margin-top: 25px;
   color: #E4E4E4;
 }
-.mainfooter__email {
+.footer__email {
   margin-top: 25px;
   color: #E4E4E4;
 }
-.mainfooter__number {
+.footer__number {
   margin-top: 25px;
   color: #E4E4E4;
 }
-.mainfooter__company {
+.footer__company {
   margin-top: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
 }
-.mainfooter__shop {
+.footer__shop {
   margin-top: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
 }
-.mainfooter__help {
+.footer__help {
   margin-top: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
 }
-.mainfooter__opening-time {
+.footer__opening-time {
   margin-top: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
 }
-.mainfooter a {
+.footer a {
   color: #E4E4E4;
 }
 
 .softfooter {
   background-color: #222222;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   height: 88px;
   display: flex;
   align-items: center;
@@ -871,6 +942,9 @@ a {
   color: #222222;
 }
 
+.latest-news {
+  margin-bottom: 96px;
+}
 .latest-news__wrapper {
   flex-direction: column;
 }

@@ -1,11 +1,18 @@
 @import './vars'
     
-.mainfooter
+.footer
+    padding-top: 93px
     background-color: $head
     color: $text-white
     padding-bottom: 88px
+    input
+        background-color: #353535
+        color: $text-white
+        border-color: #353535!important
     &__wrapper
         flex-direction: column
+    &__discount
+        margin-top: 0
     &__get-email
         display: flex
         flex-direction: column
@@ -79,7 +86,7 @@
 
 .softfooter
     background-color: $head
-    border-top: 1px solid $text-white
+    border-top: 1px solid transparentize($text-white, 0.9)
     height: 88px
     display: flex
     align-items: center
