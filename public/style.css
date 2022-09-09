@@ -497,23 +497,25 @@
   height: 2px;
   background-color: #222222;
 }
-.main {
+.mainfooter {
   background-color: #222222;
   color: #ffffff;
   padding-bottom: 88px;
 }
-.main__wrapper {
+.mainfooter__wrapper {
   flex-direction: column;
 }
-.main__get-email {
+.mainfooter__get-email {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.main__get-email .input {
+.mainfooter__get-email .input {
+  margin-top: 24px;
   width: 550px;
 }
-.main__join {
+.mainfooter__join {
+  margin-top: 24px;
   margin-left: 20px;
   width: 150px;
   height: 48px;
@@ -527,95 +529,95 @@
   border: none;
   background-color: #5C5C5C;
 }
-.main__email-address {
+.mainfooter__email-address {
   justify-content: center;
   display: flex;
 }
-.main__socials a {
+.mainfooter__socials a {
   margin-top: 40px;
   color: #ffffff;
 }
-.main__socials a:not(:last-child) {
+.mainfooter__socials a:not(:last-child) {
   margin-right: 36px;
   color: #ffffff;
 }
-.main__logo {
+.mainfooter__logo {
   margin-top: 90px;
 }
-.main__info {
+.mainfooter__info {
   display: flex;
   justify-content: space-between;
 }
-.main__contact-info {
+.mainfooter__contact-info {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
-.main__address {
+.mainfooter__address {
   margin-top: 25px;
   color: #E4E4E4;
 }
-.main__email {
+.mainfooter__email {
   margin-top: 25px;
   color: #E4E4E4;
 }
-.main__number {
+.mainfooter__number {
   margin-top: 25px;
   color: #E4E4E4;
 }
-.main__company {
+.mainfooter__company {
   margin-top: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
 }
-.main__shop {
+.mainfooter__shop {
   margin-top: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
 }
-.main__help {
+.mainfooter__help {
   margin-top: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
 }
-.main__opening-time {
+.mainfooter__opening-time {
   margin-top: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;
 }
-.main a {
+.mainfooter a {
   color: #E4E4E4;
 }
 
-.soft {
+.softfooter {
   background-color: #222222;
   border-top: 1px solid #ffffff;
   height: 88px;
   display: flex;
   align-items: center;
 }
-.soft__wrapper {
+.softfooter__wrapper {
   justify-content: space-between;
 }
-.soft__data {
+.softfooter__data {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #E4E4E4;
 }
-.soft__switcher a {
+.softfooter__switcher a {
   position: relative;
   color: #ffffff;
   margin-right: 22px;
 }
-.soft__switcher a:first-child {
+.softfooter__switcher a:first-child {
   margin-right: 27px;
 }
-.soft__switcher a::after {
+.softfooter__switcher a::after {
   position: absolute;
   right: -22px;
   top: calc(50% - 4px);
